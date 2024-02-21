@@ -1,0 +1,273 @@
+﻿<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
+<!-- Created By Chris -->
+<html>
+
+<head>
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="./assets/Images/logo.png">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>MWS - Accessorys</title>
+    <meta name="description" content="This is the BTEC GCSE site for Unit 13 Website Development. Created By Chris K-M">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="stylesheet" href="./assets/JSCSS/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <style>
+        
+        .product-card {
+            width: 300px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            margin: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            float: left;
+        }
+        
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+    </style>
+
+</head>
+<header>
+    <div class="menu-container">
+        <img src="./assets/Images/logo.png" alt="Mobile World Station Logo" class="logo" />
+        <nav class="main-menu">
+            <a aria-current="page" href="./index.html">Home</a>
+            <a href="./mobilephones.html">Phones</a>
+            <a href="./tablets.html">Tablets</a>
+            <a href="./specialoffers.html">Special Offers</a>
+            <a href="./accessorys.html">Accessories</a>
+            <a href="./feedback.html">Feedback</a>
+            <a href="./contact.html">Contact</a>
+            <a href="./termsofservice.html">TOS</a>
+            <a href="./credits.html">Credits</a>
+        </nav>
+        <div class="right-buttons">
+            <a href="./cart.html" aria-label="Shopping Cart"><i class="bi bi-cart"></i></a>
+            <a href="https://github.chriswasntavailable.xyz" aria-label="GitHub"><i class="bi bi-github"></i></a>
+        </div>
+        <button class="toggle-menu">&#9776; Menu</button>
+    </div>
+</header>
+<script src="./assets/JSCSS/header.js"></script>
+<!-- Created By Chris -->
+
+<section>
+    <section>
+        <div class="product-card">
+            <div class="product-image" style="background-image: url('./assets/Images/accessorys/apple20wusbcchargerplug.png');"></div>
+            <div class="product-info">
+                <div class="product-title">Apple Power Adapter White</div>
+                <div class="product-description">Key features
+                    <ul>
+                        <li>Compatible with USB-C devices</li>
+                        <li>20W fast, efficient charging</li>
+                        <li>50% charge in 35 mins</li>
+                </div>
+                </ul>
+                <div class="product-price">£19.99</div>
+                <button onclick="addToCart('apple20usbcchargerplug', 'Apple 20W USB-C Power Adapter White', 19.99 , './assets/Images/accessorys/apple20wusbcchargerplug.png')">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image" style="background-image: url('./assets/Images/accessorys/belkin15wfastwirelesscharger.png');"></div>
+            <div class="product-info">
+                <div class="product-title">Belkin Fast Wireless Charger</div>
+                <div class="product-description">Key features
+                    <ul>
+                        <li>Non-slip material</li>
+                        <li>Qi-compatible</li>
+                        <li>15 Watt Charging Capability</li>
+                    </ul>
+                </div>
+                <div class="product-price">£30.99</div>
+                <button onclick="addToCart('belkin15wfastwirelesschargerblack', 'Belkin 15w Fast Wireless Charger Black', 30.99, './assets/Images/accessorys/belkin15wfastwirelesscharger.png')">Add to Cart</button>
+            </div>
+        </div>
+
+
+
+        <div class="product-card">
+            <div class="product-image" style="background-image: url('./assets/Images/accessorys/defencebundleforsamsunga14.png');"></div>
+            <div class="product-info">
+                <div class="product-title">Defence Bundle for Samsung</div>
+                <div class="product-description">Key features
+                    <ul>
+                        <li>Clear case</li>
+                        <li>Toughened glass screen protector</li>
+                        <li>Made for Samsung A14</li>
+                    </ul>
+                </div>
+                <div class="product-price">£15.99</div>
+                <button onclick="addToCart('defencebundleforsamsunga14', 'Defence Bundle for Samsung A14', 15.99, './assets/Images/accessorys/defencebundleforsamsunga14.png')">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image" style="background-image: url('./assets/Images/accessorys/defencescreenprotectorsamsunga34.png');"></div>
+            <div class="product-info">
+                <div class="product-title">Defence Glass Screen Protector</div>
+                <div class="product-description">Key features
+                    <ul>
+                        <li>Impact & scratch protection</li>
+                        <li>Clear visibility</li>
+                        <li>Made for Samsung A34</li>
+                    </ul>
+                </div>
+                <div class="product-price">£15.99</div>
+                <button onclick="addToCart('defencescreenprotectorsamsunga34', 'Defence Glass Screen Protector for Samsung A34', 15.99, './assets/Images/accessorys/defencescreenprotectorsamsunga34.png')">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image" style="background-image: url('./assets/Images/accessorys/appleairtag.png');"></div>
+            <div class="product-info">
+                <div class="product-title">Apple AirTag Bluetooth Tracker</div>
+                <div class="product-description">Key features
+                    <ul>
+                        <li>Track Your Valuable Items</li>
+                        <li>Easy to Attach</li>
+                        <li>Connects to the Find My Network</li>
+                    </ul>
+                </div>
+                <div class="product-price">£40.00</div>
+                <button onclick="addToCart('appleairtag', 'Apple Airtag', 40.00, './assets/Images/accessorys/appleairtag.png')">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image" style="background-image: url('./assets/Images/accessorys/zaggpixel8problackcase.png');"></div>
+            <div class="product-info">
+                <div class="product-title">Zagg Pixel 8 Pro Luxe Case</div>
+                <div class="product-description">Key features
+                    <ul>
+                        <li>3m/10ft drop protection</li>
+                        <li>Strengthened with graphene</li>
+                        <li>Uses recycled plastic</li>
+                    </ul>
+                </div>
+                <div class="product-price">£20.99</div>
+                <button onclick="addToCart('zaggpixel8problackcase', 'Zagg Pixel 8 Pro Luxe Case Black', 20.99, './assets/Images/accessorys/zaggpixel8problackcase.png')">Add to Cart</button>
+            </div>
+
+        </div>
+        <div class="product-card">
+            <div class="product-image" style="background-image: url('./assets/Images/accessorys/appleiphone14siliconcasewithmagsafe.png');"></div>
+            <div class="product-info">
+                <div class="product-title">iPhone 14 Silicone Case</div>
+                <div class="product-description">Key features
+                    <ul>
+                        <li>Works with MagSafe</li>
+                        <li>Everyday protection</li>
+                        <li>Interior microfiber lining</li>
+                    </ul>
+                </div>
+                <div class="product-price">£36.00</div>
+                <button onclick="addToCart('appleiphone14siliconcasewithmagsafe', 'Apple iPhone 14 Silicone Case with MagSafe', 36.00, './assets/Images/accessorys/appleiphone14siliconcasewithmagsafe.png')">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image" style="background-image: url('./assets/Images/accessorys/apple15wmagsafewirelesscharger.png');"></div>
+            <div class="product-info">
+                <div class="product-title">MagSafe 15w Wireless Charger</div>
+                <div class="product-description">Key features
+                    <ul>
+                        <li>iPhones & AirPods compatible</li>
+                        <li>15 Watt Charging Speed</li>
+                        <li>Can Be Used with the Silicone Case</li>
+                    </ul>
+                </div>
+                <div class="product-price">£45.00</div>
+                <button onclick="addToCart('apple15wmagsafewirelesscharger', 'Apple MagSafe 15w Wireless Charger', 45.00, './assets/Images/accessorys/apple15wmagsafewirelesscharger.png')">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image" style="background-image: url('./assets/Images/accessorys/applelightingtousbacable.png');"></div>
+            <div class="product-info">
+                <div class="product-title">Apple Lightning to USB Cable 2m</div>
+                <div class="product-description">Key features
+                    <ul>
+                        <li>Sync and charge your iPhone, iPad and iPod Touch</li>
+                        <li>Includes a reversible USB design</li>
+                        <li>MFI Certified</li>
+                    </ul>
+                </div>
+                <div class="product-price">£20.00</div>
+                <button onclick="addToCart('applelightingtousbacable', 'Apple Lightning to USB Cable 2m', 20, './assets/Images/accessorys/applelightingtousbacable.png')">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image" style="background-image: url('./assets/Images/accessorys/appleairpods2ndgen.png');"></div>
+            <div class="product-info">
+                <div class="product-title">Airpods 2nd Generation</div>
+                <div class="product-description">Key features
+                    <ul>
+                        <li>Siri Controlled</li>
+                        <li>5 Hour Battery Life</li>
+                        <li>High Quality Sound</li>
+                    </ul>
+                </div>
+                <div class="product-price">£120.00</div>
+                <button onclick="addToCart('appleairpods2ndgen', 'Airpods 2nd Gen', 120, './assets/Images/accessorys/appleairpods2ndgen.png')">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image" style="background-image: url('./assets/Images/accessorys/appleearpodswithlightingconnector.png');"></div>
+            <div class="product-info">
+                <div class="product-title">Apple EarPods with Lightning Connector</div>
+                <div class="product-description">Key features
+                    <ul>
+                        <li>Comfortable in ear design</li>
+                        <li>Control music and video with builtin remote</li>
+                        <li>MFI Certified</li>
+                    </ul>
+                </div>
+                <div class="product-price">£20.00</div>
+                <button onclick="addToCart('appleearpodswithlightningconnector', 'Apple EarPods with Lightning Connector', 20, './assets/Images/accessorys/appleearpodswithlightingconnector.png')">Add to Cart</button>
+            </div>
+        </div>
+
+    </section>
+
+    <script>
+        function addToCart(id, name, price, imagePath) {
+            // Use localStorage to store cart items
+            const cartItems = JSON.parse(localStorage.getItem('cart')) || {};
+
+            if (!cartItems[id]) {
+                cartItems[id] = {
+                    name,
+                    price,
+                    quantity: 1,
+                    imagePath,
+                };
+            } else {
+                cartItems[id].quantity += 1;
+            }
+
+            // Save the updated cart back to localStorage
+            localStorage.setItem('cart', JSON.stringify(cartItems));
+
+            // Redirect to the cart page
+            window.location.href = 'cart.html';
+        }
+    </script>
+
+
+    </body>
+
+</html>

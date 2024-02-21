@@ -1,0 +1,186 @@
+﻿<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
+<!-- Created By Chris -->
+<html>
+
+<head>
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="./assets/Images/logo.png">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>MWS - Special Offers</title>
+    <meta name="description" content="This is the BTEC GCSE site for Unit 13 Website Development. Created By Chris K-M">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="stylesheet" href="./assets/JSCSS/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <style>
+        /* Add this CSS for side-by-side layout */
+        
+        .product-card {
+            width: 300px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            margin: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            /* Display product cards side by side */
+            float: left;
+        }
+        /* Clear float to prevent layout issues */
+        
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+    </style>
+</head>
+<header>
+    <div class="menu-container">
+        <img src="./assets/Images/logo.png" alt="Mobile World Station Logo" class="logo" />
+        <nav class="main-menu">
+            <a aria-current="page" href="./index.html">Home</a>
+            <a href="./mobilephones.html">Phones</a>
+            <a href="./tablets.html">Tablets</a>
+            <a href="./specialoffers.html">Special Offers</a>
+            <a href="./accessorys.html">Accessories</a>
+            <a href="./feedback.html">Feedback</a>
+            <a href="./contact.html">Contact</a>
+            <a href="./termsofservice.html">TOS</a>
+            <a href="./credits.html">Credits</a>
+        </nav>
+        <div class="right-buttons">
+            <a href="./cart.html" aria-label="Shopping Cart"><i class="bi bi-cart"></i></a>
+            <a href="https://github.chriswasntavailable.xyz" aria-label="GitHub"><i class="bi bi-github"></i></a>
+        </div>
+        <button class="toggle-menu">&#9776; Menu</button>
+    </div>
+</header>
+<script src="./assets/JSCSS/header.js"></script>
+<!-- Created By Chris -->
+
+<section>
+    <section>
+
+        <div class="product-card">
+            <div class="product-image" style="background-image: url('assets/Images/specialoffers/appletv4k.jpg');"></div>
+            <div class="product-info">
+                <div class="product-title"><i class="bi bi-apple"> </i>Apple TV 4K</div>
+                <div class="product-description">How to Redeem
+                    <ul>
+                        <li>20% off when bought with an Apple Device</li>
+                </div>
+                </ul>
+                <div class="product-price"><s>£120.00</s> £96.99*¹</div>
+                <button onclick="addToCart('appletv4k', 'Apple TV 4K', 96, 'assets/Images/specialoffers/appletv4k.jpg')">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image" style="background-image: url('assets/Images/specialoffers/Toshiba50inchSmart4KTV.webp');"></div>
+            <div class="product-info">
+                <div class="product-title"><i class="bi bi-amazon"> </i>Toshiba 50" Fire Smart TV</div>
+                <div class="product-description">How to Redeem
+                    <ul>
+                        <li>35% off when bought with an Amazon Device</li>
+                </div>
+                </ul>
+                <div class="product-price"><s>£270.00</s> £175.50*¹</div>
+                <button onclick="addToCart('toshiba50inchsmarttv', 'Toshiba 50 Inch Smart TV', 175.50, 'assets/Images/specialoffers/Toshiba50inchSmart4KTV.webp')">Add to Cart</button>
+            </div>
+        </div>
+        
+        <div class="product-card">
+            <div class="product-image" style="background-image: url('assets/Images/specialoffers/appletvplus.png');"></div>
+            <div class="product-info">
+                <div class="product-title"><i class="bi bi-apple"> </i>Apple TV+</div>
+                <div class="product-description">How to Redeem
+                    <ul>
+                        <li>3 Months free when bought with an Apple Device</li>
+                </div>
+                </ul>
+                <div class="product-price"><s>£23.60</s> £0*¹</div>
+                <button onclick="addToCart('appletvplus', 'Apple TV+', 0, 'assets/Images/specialoffers/appletvplus.png')">Add to Cart</button>
+            </div>
+        </div>
+        
+        <div class="product-card">
+            <div class="product-image" style="background-image: url('assets/Images/specialoffers/applemusic.png');"></div>
+            <div class="product-info">
+                <div class="product-title"><i class="bi bi-apple"> </i>Apple Music</div>
+                <div class="product-description">How to Redeem
+                    <ul>
+                        <li>3 Months free when bought with an Apple Device*²</li>
+                </div>
+                </ul>
+                <div class="product-price"><s>£26.00</s> £0*¹</div>
+                <button onclick="addToCart('applemusic', 'Apple Music', 0, 'assets/Images/specialoffers/applemusic.png')">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image" style="background-image: url('assets/Images/specialoffers/applearcade.svg');"></div>
+            <div class="product-info">
+                <div class="product-title"><i class="bi bi-apple"> </i>Apple Arcade</div>
+                <div class="product-description">How to Redeem
+                    <ul>
+                        <li>3 Months free when bought with an Apple Device*²</li>
+                </div>
+                </ul>
+                <div class="product-price"><s>£23.60</s> £0*¹</div>
+                <button onclick="addToCart('applearcade', 'Apple Arcade', 0, 'assets/Images/specialoffers/applearcade.svg')">Add to Cart</button>
+            </div>
+        </div>
+        
+        <div class="product-card">
+            <div class="product-image" style="background-image: url('assets/Images/specialoffers/applewatchseries9.jfif');"></div>
+            <div class="product-info">
+                <div class="product-title"><i class="bi bi-apple"> </i>Apple Watch Series 9</div>
+                <div class="product-description">How to Redeem
+                    <ul>
+                        <li>15% when bought with an Apple Device*²</li>
+                </div>
+                </ul>
+                <div class="product-price"><s>£399</s> £339.15*¹</div>
+                <button onclick="addToCart('applewatchseries9', 'Apple Watch Series 9', 0, 'assets/Images/specialoffers/applewatchseries9.jfif')">Add to Cart</button>
+            </div>
+        </div>
+
+
+
+
+
+
+    </section>
+
+    <script>
+        function addToCart(id, name, price, imagePath) {
+            // Use localStorage to store cart items
+            const cartItems = JSON.parse(localStorage.getItem('cart')) || {};
+
+            if (!cartItems[id]) {
+                cartItems[id] = {
+                    name,
+                    price,
+                    quantity: 1,
+                    imagePath,
+                };
+            } else {
+                cartItems[id].quantity += 1;
+            }
+
+            // Save the updated cart back to localStorage
+            localStorage.setItem('cart', JSON.stringify(cartItems));
+
+            // Redirect to the cart page
+            window.location.href = 'cart.html';
+        }
+    </script>
+
+    </body>
+
+</html>
