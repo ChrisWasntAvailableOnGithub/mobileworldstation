@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -10,6 +11,7 @@
     <meta name="description" content="This is the BTEC GCSE site for Unit 13 Website Development. Created By Chris">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <link rel="stylesheet" href="./assets/JSCSS/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <style>
         main {
@@ -80,8 +82,7 @@
         <div class="container mt-5">
             <div class="row justify-content-center">
                 <div class="col-md-6">
-                    <h2 class="mb-4">Feedback Form</h2>
-                    <form action="for,s.php" method="post" style="width: 100%; max-width: 900px;">
+                    <form id="myForm" action="submit_form.php" method="post" style="width: 100%; max-width: 900px;">
                         <div class="form-group">
                             <label for="name">Full Name*</label>
                             <input type="text" class="form-control" id="name" name="name" required>
@@ -103,11 +104,11 @@
                         </div>
 
                         <div class="form-group">
-                            <label for="feedback">Feedback You have for Mobile World Station</label>
+                            <label for="maininput">Feedback You have for Mobile World Station</label>
                             <textarea class="form-control feedback-textarea" id="maininput" name="maininput" rows="4" required></textarea>
                         </div>
 
-                        <button type="submit" class="btn btn-primary submit-button">Submit Feedback</button>
+                        <button type="button" class="btn btn-primary submit-button" id="submitBtn">Submit Feedback</button>
                     </form>
                 </div>
             </div>
@@ -119,6 +120,23 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.1/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="./assets/JSCSS/validation.js"></script>
+
+<script>
+    // Intercept form submission
+    document.getElementById('submitBtn').addEventListener('click', function(event) {
+        event.preventDefault(); // Prevent the default form submission behavior
+
+        // Get the name from the form input
+        var name = document.getElementById('name').value;
+
+        // Display the alert message
+        alert("Thanks for submitting " + name);
+
+        // Submit the form
+        document.getElementById('myForm').submit();
+    });
+</script>
+
 
 </body>
 
