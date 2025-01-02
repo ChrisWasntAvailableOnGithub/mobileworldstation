@@ -1,0 +1,287 @@
+﻿<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
+<!-- Created By Chris -->
+<html>
+
+<head>
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="./assets/Images/logo.png">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>MWS - Tablets</title>
+    <meta name="description" content="This is the BTEC GCSE site for Unit 13 Website Development. Created By Chris K-M">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="stylesheet" href="./assets/JSCSS/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <style>
+        .product-card {
+            width: 300px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            margin: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            float: left;
+        }
+        
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+    </style>
+</head>
+<header>
+    <div class="menu-container">
+        <img src="./assets/Images/logo.png" alt="Mobile World Station Logo" class="logo" />
+        <nav class="main-menu">
+            <a aria-current="page" href="./index.html">Home</a>
+            <a href="./mobilephones.html">Phones</a>
+            <a href="./tablets.html">Tablets</a>
+            <a href="./specialoffers.html">Special Offers</a>
+            <a href="./accessorys.html">Accessories</a>
+            <a href="./feedback.html">Feedback</a>
+            <a href="./contact.html">Contact</a>
+            <a href="./termsofservice.html">TOS</a>
+            <a href="./credits.html">Credits</a>
+        </nav>
+        <div class="right-buttons">
+            <a href="./cart.html" aria-label="Shopping Cart"><i class="bi bi-cart"></i></a>
+            <a href="https://github.chriswasntavailable.xyz" aria-label="GitHub"><i class="bi bi-github"></i></a>
+        </div>
+        <button class="toggle-menu">&#9776; Menu</button>
+    </div>
+</header>
+<script src="./assets/JSCSS/header.js"></script>
+<!-- Created By Chris -->
+
+<section>
+    <section>
+        <div class="product-card">
+            <div class="product-image" style="background-image: url('assets/Images/tablets/samsungtabs8+.png');"></div>
+            <div class="product-info">
+                <div class="product-title"><i class="bi bi-android2"> </i>Samsung Galaxy Tab S8 Plus</div>
+                <div class="product-description">Key features
+                    <ul>
+                        <li>Android 12</li>
+                        <li>Super AMOLED display</li>
+                        <li>Battery life: Up to 13 hours</li>
+                </div>
+                </ul>
+                <div class="product-price">£600.00</div>
+                <button onclick="addToCart('samsungtabs8+', 'Samsung Galaxy Tab S8 Plus', 600, 'assets/Images/tablets/samsungtabs8+.png')">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image" style="background-image: url('./assets/Images/tablets/appleipad2021sg.png');"></div>
+            <div class="product-info">
+                <div class="product-title"><i class="bi bi-apple"> </i>Apple iPad (2021) Space Gray</div>
+                <div class="product-description">Key features
+                    <ul>
+                        <li>iPadOS</li>
+                        <li>64 GB storage</li>
+                        <li>Battery life: Up to 10 hours</li>
+                    </ul>
+                </div>
+                <div class="product-price">£759.99</div>
+                <button onclick="addToCart('appleipad2021sg', 'Apple iPad (2021) Space Gray', 319.99, './assets/Images/tablets/appleipad2021sg.png')">Add to Cart</button>
+            </div>
+        </div>
+
+
+
+        <div class="product-card">
+            <div class="product-image" style="background-image: url('./assets/Images/tablets/samsungtabs9u.webp');"></div>
+            <div class="product-info">
+                <div class="product-title"><i class="bi bi-android2"> </i>Samsung Galaxy Tab S9</div>
+                <div class="product-description">Key features
+                    <ul>
+                        <li>Android 13</li>
+                        <li>128 GB storage</li>
+                        <li>Super AMOLED display</li>
+                    </ul>
+                </div>
+                <div class="product-price">£680.00</div>
+                <button onclick="addToCart('samsungtabs9', 'Samsung Galaxy Tab S9', 680.00, './assets/Images/tablets/samsungtabs9u.webp')">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image" style="background-image: url('./assets/Images/tablets/lenovotabm8.webp');"></div>
+            <div class="product-info">
+                <div class="product-title"><i class="bi bi-android2"> </i>Lenovo Tab M8 4th Gen</div>
+                <div class="product-description">Key features
+                    <ul>
+                        <li>Android 12 Go Edition</li>
+                        <li>32 GB storage</li>
+                        <li>Battery life: Up to 16 hours</li>
+                    </ul>
+                </div>
+                <div class="product-price">£129.99</div>
+                <button onclick="addToCart('lenovotabm8', 'Lenovo Tab M8 4th Gen', 129.99, './assets/Images/tablets/lenovotabm8.webp')">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image" style="background-image: url('./assets/Images/tablets/amazonfire7.webp');"></div>
+            <div class="product-info">
+                <div class="product-title"><i class="bi bi-amazon"> </i>Amazon Fire 7 (2022)</div>
+                <div class="product-description">Key features
+                    <ul>
+                        <li>Fire OS 8</li>
+                        <li>16 GB storage</li>
+                        <li>Battery life: Up to 12 hours</li>
+                    </ul>
+                </div>
+                <div class="product-price">£65.99</div>
+                <button onclick="addToCart('amazonfire7', 'Amazon Fire 7 (2022)', 65.99, './assets/Images/tablets/amazonfire7.webp')">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image" style="background-image: url('./assets/Images/tablets/appleipadairblue.webp');"></div>
+            <div class="product-info">
+                <div class="product-title"><i class="bi bi-apple"> </i>Apple iPad Air (2022) Blue</div>
+                <div class="product-description">Key features
+                    <ul>
+                        <li>iPadOS</li>
+                        <li>64 GB storage</li>
+                        <li>Battery life: Up to 10 hours</li>
+                    </ul>
+                </div>
+                <div class="product-price">£629.99</div>
+                <button onclick="addToCart('appleipadairblue', 'Apple iPad Air (2022)', 629.99, './assets/Images/tablets/appleipadairblue.webp')">Add to Cart</button>
+            </div>
+
+        </div>
+        <div class="product-card">
+            <div class="product-image" style="background-image: url('./assets/Images/tablets/appleipad2022.webp');"></div>
+            <div class="product-info">
+                <div class="product-title"><i class="bi bi-apple"> </i>Apple 10.9" iPad (2022)</div>
+                <div class="product-description">Key features
+                    <ul>
+                        <li>iPadOS</li>
+                        <li>256 GB storage</li>
+                        <li>Battery life: Up to 10 hours</li>
+                    </ul>
+                </div>
+                <div class="product-price">£680.00</div>
+                <button onclick="addToCart('appleipad2022', 'Apple 10.9 inch iPad (2022)', 880.00, './assets/Images/tablets/appleipad2022.webp')">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image" style="background-image: url('./assets/Images/tablets/aceracta.webp');"></div>
+            <div class="product-info">
+                <div class="product-title"><i class="bi bi-android2"> </i>ACER ACTAB1024 10.1"</div>
+                <div class="product-description">Key features
+                    <ul>
+                        <li>Android 13</li>
+                        <li>32 GB storage</li>
+                        <li>Battery life: Up to 11 hours</li>
+                    </ul>
+                </div>
+                <div class="product-price">£129.99</div>
+                <button onclick="addToCart('aceracta', 'ACER ACTAB1024 10.1 inch', 129.99, './assets/Images/tablets/aceracta.webp')">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image" style="background-image: url('./assets/Images/tablets/samsungtaba8.webp');"></div>
+            <div class="product-info">
+                <div class="product-title"><i class="bi bi-android2"> </i>Samsung Galaxy Tab A8</div>
+                <div class="product-description">Key features
+                    <ul>
+                        <li>Android 11</li>
+                        <li>Full HD screen</li>
+                        <li>32 GB storage</li>
+                    </ul>
+                </div>
+                <div class="product-price">£164.99</div>
+                <button onclick="addToCart('samsungtaba8', 'Samsung Galaxy Tab A8', 164.99, './assets/Images/tablets/samsungtaba8.webp')">Add to Cart</button>
+            </div>
+        </div>
+        
+           <div class="product-card">
+            <div class="product-image" style="background-image: url('assets/Images/tablets/lenovop11pro.png');"></div>
+            <div class="product-info">
+                <div class="product-title"><i class="bi bi-android2"> </i>Lenovo Tab P11 Pro</div>
+                <div class="product-description">Key features
+                    <ul>
+                        <li>120Hz refresh rate</li>
+                        <li>Full HD screen</li>
+                        <li>256 GB storage</li>
+                    </ul>
+                </div>
+                <div class="product-price">£530.99</div>
+                <button onclick="addToCart('lenovop11pro', 'Lenovo Tab P11 Pro', 530.99, 'assets/Images/tablets/lenovop11pro.png')">Add to Cart</button>
+            </div>
+        </div>
+
+          <div class="product-card">
+            <div class="product-image" style="background-image: url('assets/Images/tablets/googlepixeltablet.png');"></div>
+            <div class="product-info">
+                <div class="product-title"><i class="bi bi-android2"> </i>Google Pixel Tablet</div>
+                <div class="product-description">Key features
+                    <ul>
+                        <li>11" Full HD Display</li>
+                        <li>Google Tensor G2</li>
+                        <li>256 GB storage</li>
+                    </ul>
+                </div>
+                <div class="product-price">£699.99</div>
+                <button onclick="addToCart('googlepixeltablet', 'Google Pixel Tablet', 699.99, 'assets/Images/tablets/googlepixeltablet.png')">Add to Cart</button>
+            </div>
+        </div>
+
+          <div class="product-card">
+            <div class="product-image" style="background-image: url('assets/Images/tablets/amazonhdfire8.jpg');"></div>
+            <div class="product-info">
+                <div class="product-title"><i class="bi bi-amazon"> </i>Amazon Fire HD 8</div>
+                <div class="product-description">Key features
+                    <ul>
+                        <li>8" HD Display</li>
+                        <li>Amazon Fire OS</li>
+                        <li>10 Hour Battery Life</li>
+                    </ul>
+                </div>
+                <div class="product-price">£99.99</div>
+                <button onclick="addToCart('amazonfirehd8', 'Amazon Fire HD 8', 99.99, 'assets/Images/tablets/amazonhdfire8.jpg')">Add to Cart</button>
+            </div>
+        </div>
+
+
+    </section>
+
+    <script>
+        function addToCart(id, name, price, imagePath) {
+            // Use localStorage to store cart items
+            const cartItems = JSON.parse(localStorage.getItem('cart')) || {};
+
+            if (!cartItems[id]) {
+                cartItems[id] = {
+                    name,
+                    price,
+                    quantity: 1,
+                    imagePath,
+                };
+            } else {
+                cartItems[id].quantity += 1;
+            }
+
+            // Save the updated cart back to localStorage
+            localStorage.setItem('cart', JSON.stringify(cartItems));
+
+            // Redirect to the cart page
+            window.location.href = 'cart.html';
+        }
+    </script>
+
+    </body>
+
+</html>
